@@ -1,10 +1,10 @@
-# SleepWell - Plataforma de Salud Digital 🌙
+# SleepWell - Plataforma de Salud Digital 
 
 Aplicación web desarrollada con React + Vite que utiliza inteligencia artificial para predecir, prevenir y gestionar trastornos del sueño relacionados con la ansiedad post-pandemia.
 
-## 🚀 Características Principales
+##  Características Principales
 
-### 🔐 Sistema de Autenticación Completo
+###  Sistema de Autenticación Completo
 - **Registro de usuarios** con validación avanzada en tiempo real
 - **Inicio de sesión** seguro con gestión de sesiones
 - **Protección de rutas** privadas con React Router
@@ -12,7 +12,7 @@ Aplicación web desarrollada con React + Vite que utiliza inteligencia artificia
 - **Validación de formularios** con feedback inmediato
 - **Indicador de fortaleza de contraseña** en tiempo real
 
-### 📊 Funcionalidades
+### Funcionalidades
 - Dashboard personalizado para usuarios autenticados
 - Predicción inteligente de trastornos del sueño (IA)
 - Análisis de patrones de sueño
@@ -20,7 +20,7 @@ Aplicación web desarrollada con React + Vite que utiliza inteligencia artificia
 - Seguimiento de progreso
 - Privacidad y seguridad de datos
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **React 19.1.1** - Biblioteca de interfaz de usuario
 - **Vite 7.1.7** - Build tool y dev server
@@ -29,7 +29,7 @@ Aplicación web desarrollada con React + Vite que utiliza inteligencia artificia
 - **Styled Components** - CSS-in-JS para estilos avanzados
 - **Context API** - Gestión de estado global de autenticación
 
-## 📦 Instalación
+## Instalación
 
 ```bash
 # Clonar el repositorio
@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 sleepwell/
@@ -74,7 +74,7 @@ sleepwell/
 └── vite.config.js          # Configuración de Vite
 ```
 
-## 📖 Guía de Uso
+## Guía de Uso
 
 ### Sistema de Autenticación
 
@@ -93,10 +93,10 @@ El formulario de registro incluye validación avanzada:
 ```
 
 **Características:**
-- ✅ Indicador de fortaleza de contraseña en tiempo real
-- ✅ Validación en tiempo real con mensajes de error claros
-- ✅ Deshabilita el botón hasta cumplir requisitos
-- ✅ Feedback visual de errores por campo
+- Indicador de fortaleza de contraseña en tiempo real
+- Validación en tiempo real con mensajes de error claros
+- Deshabilita el botón hasta cumplir requisitos
+- Feedback visual de errores por campo
 
 #### 2. Inicio de Sesión
 
@@ -121,7 +121,7 @@ Las rutas están protegidas automáticamente:
 - /dashboard - Panel de usuario
 ```
 
-## 🧪 Validaciones Implementadas
+## Validaciones Implementadas
 
 ### Validación de Email
 ```javascript
@@ -154,26 +154,26 @@ Las rutas están protegidas automáticamente:
 - Sin espacios
 ```
 
-## 🔒 Seguridad
+## Seguridad
 
 ### Implementaciones Actuales:
-- ✅ Validación en cliente (frontend)
-- ✅ Inputs controlados (React state)
-- ✅ Persistencia segura en localStorage
-- ✅ Tokens de sesión (simulados)
-- ✅ Rutas protegidas
+- Validación en cliente (frontend)
+- Inputs controlados (React state)
+- Persistencia segura en localStorage
+- Tokens de sesión (simulados)
+- Rutas protegidas
 
 ### Recomendaciones para Producción:
-- 🔄 Implementar backend con Node.js/NestJS
-- 🔄 Usar JWT para autenticación
-- 🔄 Hashear contraseñas con bcrypt
-- 🔄 Implementar HTTPS obligatorio
-- 🔄 Validación en servidor (backend)
-- 🔄 Rate limiting para prevenir ataques
-- 🔄 Sanitización de inputs
-- 🔄 Protección CSRF
+- Implementar backend con Node.js/NestJS
+- Usar JWT para autenticación
+- Hashear contraseñas con bcrypt
+- Implementar HTTPS obligatorio
+- Validación en servidor (backend)
+- Rate limiting para prevenir ataques
+- Sanitización de inputs
+- Protección CSRF
 
-## 📚 API del Contexto de Autenticación
+##   API del Contexto de Autenticación
 
 ### useAuth Hook
 
@@ -246,7 +246,7 @@ logout(); // Cierra sesión y limpia localStorage
 navigate('/');
 ```
 
-## 🎨 Componentes Principales
+##  Componentes Principales
 
 ### LoginModal
 Modal de inicio de sesión con:
@@ -277,7 +277,7 @@ HOC para proteger rutas:
 - Redirige si no hay sesión
 - Muestra loader mientras verifica
 
-## 📊 Flujo de Autenticación
+##  Flujo de Autenticación
 
 ```
 ┌─────────────┐
@@ -304,7 +304,7 @@ HOC para proteger rutas:
                    └─ Register ──► Valida ──► Dashboard
 ```
 
-## 🧩 Ejemplos de Código
+## Ejemplos de Código
 
 ### Crear un componente protegido
 
@@ -354,7 +354,7 @@ function MiFormulario() {
 }
 ```
 
-## 📝 Scripts Disponibles
+## Scripts Disponibles
 
 ```bash
 # Desarrollo
@@ -368,7 +368,7 @@ npm run preview      # Previsualiza el build de producción
 npm run lint         # Ejecuta ESLint para verificar código
 ```
 
-## 🐛 Solución de Problemas
+##  Solución de Problemas
 
 ### Error: "useAuth must be used within AuthProvider"
 **Solución:** Asegúrate de que tu componente esté envuelto en `<AuthProvider>` en `main.jsx`
@@ -379,7 +379,7 @@ npm run lint         # Ejecuta ESLint para verificar código
 ### Rutas no funcionan correctamente
 **Solución:** Asegúrate de tener `<BrowserRouter>` en `main.jsx`
 
-## 🚧 Roadmap
+##  Roadmap
 
 ### Próximas Funcionalidades:
 - [ ] Backend con Node.js/NestJS
@@ -393,26 +393,26 @@ npm run lint         # Ejecuta ESLint para verificar código
 - [ ] PWA (Progressive Web App)
 - [ ] Testing con Vitest/Jest
 
-## 👥 Autor
+## Autor
 
 **Janice Forero**  
 Proyecto: SleepWell - Sistema de Salud Digital
 
-## 📄 Licencia
+## Licencia
 
 © 2025 SleepWell. Todos los derechos reservados.
 
 ---
 
-## 🎓 Sustentación Académica
+## Sustentación Académica
 
 Este proyecto implementa:
-- ✅ **Formularios Avanzados con React** (inputs controlados, validación multicapa)
-- ✅ **Manejo de Autenticación** (Context API, rutas protegidas, persistencia)
-- ✅ **Gestión de Estado** (useState, useContext, custom hooks)
-- ✅ **Validación Robusta** (tiempo real, múltiples niveles)
-- ✅ **UX/UI Profesional** (Material-UI, Styled Components, animaciones)
-- ✅ **Arquitectura Escalable** (separación de concerns, componentes reutilizables)
+- **Formularios Avanzados con React** (inputs controlados, validación multicapa)
+- **Manejo de Autenticación** (Context API, rutas protegidas, persistencia)
+- **Gestión de Estado** (useState, useContext, custom hooks)
+- **Validación Robusta** (tiempo real, múltiples niveles)
+- **UX/UI Profesional** (Material-UI, Styled Components, animaciones)
+- **Arquitectura Escalable** (separación de concerns, componentes reutilizables)
 
 ### Conceptos Clave Demostrados:
 1. **Inputs Controlados**: Single source of truth en React state
@@ -426,7 +426,7 @@ Este proyecto implementa:
 
 ---
 
-## 🔗 Recursos Adicionales
+## Recursos Adicionales
 
 - [React Docs](https://react.dev)
 - [Vite Docs](https://vitejs.dev)

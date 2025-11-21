@@ -51,7 +51,7 @@ npm run dev
 sleepwell/
 ├── src/
 │   ├── components/          # Componentes reutilizables
-│   │   ├── Header.jsx       # Barra de navegación con auth
+│   │   ├── Header.jsx       # Barra de navegación 
 │   │   ├── Footer.jsx       # Pie de página
 │   │   ├── LoginModal.jsx   # Modal de inicio de sesión
 │   │   ├── RegisterModal.jsx # Modal de registro
@@ -84,9 +84,9 @@ El formulario de registro incluye validación avanzada:
 
 ```jsx
 // Validaciones implementadas:
-- Nombre completo (mínimo 3 caracteres, solo letras)
+- Nombre completo ( solo letras)
 - Email (formato válido)
-- Username (3-20 caracteres, alfanumérico)
+- Username 
 - Contraseña (mínimo 6 caracteres, letras y números)
 - Confirmación de contraseña (coincidencia)
 - Aceptación de términos y condiciones
@@ -100,7 +100,7 @@ El formulario de registro incluye validación avanzada:
 
 #### 2. Inicio de Sesión
 
-```jsx
+```
 // Proceso de login:
 1. Usuario ingresa email y contraseña
 2. Sistema valida formato de datos
@@ -144,13 +144,12 @@ Las rutas están protegidas automáticamente:
 ```javascript
 - Longitud: 3-50 caracteres
 - Solo letras y espacios
-- Soporta caracteres especiales (á, é, í, ó, ú, ñ)
+- Soporta caracteres especiales
 ```
 
 ### Validación de Username
 ```javascript
 - Longitud: 3-20 caracteres
-- Solo alfanuméricos y guión bajo (_)
 - Sin espacios
 ```
 
